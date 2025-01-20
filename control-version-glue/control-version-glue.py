@@ -16,7 +16,6 @@ job.init(args["JOB_NAME"], args)
 input_path = "s3://test-version-control-glue/versionControl.csv"  
 df = spark.read.format("csv").option("header", "true").load(input_path)  
 
-# Imprimir los datos en el log
 df.show()
 
 # Finalizar el job
