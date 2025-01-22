@@ -13,7 +13,7 @@ job = Job(glueContext)
 job.init(args["JOB_NAME"], args)
 
 
-input_path = "s3://test-version-control-glue/versionControl.csv"  
+input_path = "s3://test-version-control-glue/versionContro"  
 df = spark.read.format("csv").option("header", "true").load(input_path)  
 
 
