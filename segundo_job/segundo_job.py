@@ -16,8 +16,6 @@ job.init(args["JOB_NAME"], args)
 input_path = "s3://s3://version-control-glue-test/segundo-job.csv"  
 df = spark.read.format("csv").option("header", "true").load(input_path)  
 
-#Prueba de conexion a github
-#Prueba de pipeline conexion 
 df.show()
 
 
